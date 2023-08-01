@@ -24,7 +24,7 @@
     "structuralVariant": "Rscript cypress/r_scripts/run_structuralVariant.R 8888",
     "textAnnotation": "Rscript cypress/r_scripts/run_textAnnotation.R 8888",
     "textMarks": "Rscript cypress/r_scripts/run_textMarks.R 8888",
-    "e2e-areaChart": "start-server-and-test areaChart http://localhost:8888 'cypress run --spec \"cypress/e2e/areaChart.cy.js\" --record false'",
+    "e2e-areaChart": "start-server-and-test areaChart http://127.0.0.1:8888 'cypress run --spec \"cypress/e2e/areaChart.cy.js\" --record false'",
     "e2e-barChart": "start-server-and-test barChart http://localhost:8888 'cypress run --spec \"cypress/e2e/barChart.cy.js\" --record false'",
     "e2e-circularLinearWithBrush": "start-server-and-test circularLinearWithBrush http://localhost:8888 'cypress run --spec \"cypress/e2e/circularLinearWithBrushSpec.cy.js\" --record false'",
     "e2e-circularVisualEncoding": "start-server-and-test circularVisualEncoding http://localhost:8888 'cypress run --spec \"cypress/e2e/circularVisualEncoding.cy.js\" --record false'",
