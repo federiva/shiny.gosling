@@ -1,5 +1,8 @@
-on: push
-
+on: 
+  push:
+    branches:
+      - main
+      
 name: R-CMD-checks
 
 jobs:
