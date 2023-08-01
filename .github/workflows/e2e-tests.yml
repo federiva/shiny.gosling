@@ -22,7 +22,7 @@ jobs:
         with:
           working-directory: tests
           runTests: false
-          start: yarn e2e-areaChart
+        run: yarn e2e-areaChart
       
       # - name: Install R
       #   uses: r-lib/actions/setup-r@v2
