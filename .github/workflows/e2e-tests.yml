@@ -20,9 +20,9 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v5
         with:
-          # Disable running of tests within install job
           working-directory: tests
           runTests: false
+          start: yarn e2e-areaChart
       
       # - name: Install R
       #   uses: r-lib/actions/setup-r@v2
@@ -37,7 +37,7 @@ jobs:
       #     pak-version: 'devel'
       #     extra-packages: local::. # Necessary to avoid object usage linter errors.
       
-      - name: Cypress Run
-        uses: cypress-io/github-action@v5
-        with:
-          start: yarn e2e-areaChart
+      # - name: Cypress Run
+      #   uses: cypress-io/github-action@v5
+      #   with:
+      #     start: yarn e2e-areaChart
