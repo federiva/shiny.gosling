@@ -38,5 +38,6 @@
     "e2e-structuralVariant": "start-server-and-test structuralVariant http://localhost:8888 'cypress run --spec \"cypress/e2e/structuralVariant.cy.js\" --record false'",
     "e2e-textAnnotation": "start-server-and-test textAnnotation http://localhost:8888 'cypress run --spec \"cypress/e2e/textAnnotation.cy.js\" --record false'",
     "e2e-textMarks": "start-server-and-test textMarks http://localhost:8888 'cypress run --spec \"cypress/e2e/textMarks.cy.js\" --record false'"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
