@@ -22,7 +22,6 @@ jobs:
         with:
           # Disable running of tests within install job
           working-directory: tests
-          install-command: yarn install
           runTests: false
       
       # - name: Install R
