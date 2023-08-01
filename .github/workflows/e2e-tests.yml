@@ -21,8 +21,8 @@ jobs:
           needs: check
           pak-version: 'devel'
           extra-packages: |
-          local::. # Necessary to avoid object usage linter errors.
-          any::devtools
+            local::. # Necessary to avoid object usage linter errors.
+            any::devtools
 
       - name: Cypress install and run
         uses: cypress-io/github-action@v5
