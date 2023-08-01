@@ -21,7 +21,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           working-directory: tests
-          command: yarn installDependencies; yarn e2e-areaChart
+          command: yarn installDependencies && yarn e2e-areaChart
       
       # - name: Install R
       #   uses: r-lib/actions/setup-r@v2
