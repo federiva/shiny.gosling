@@ -9,12 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v5
-        with:
-          # Disable running of tests within install job
-          runTests: false
-      
       - name: Install node dependencies
         uses: actions/setup-node@v3
         with:
@@ -22,6 +16,14 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: tests/yarn.lock
       - run: yarn install
+
+      - name: Cypress install
+        uses: cypress-io/github-action@v5
+        with:
+          # Disable running of tests within install job
+          runTests: false
+      
+      
 
   cypress-run:
     runs-on: ubuntu-22.04
